@@ -196,6 +196,14 @@ h5,
   padding: var(--space-3xs);
 }
 
+.work_logos img {
+  max-height: 100px;       /* Or adjust to your preferred logo height */
+  width: auto;            /* Maintain aspect ratio */
+  object-fit: contain;    /* Prevent distortion */
+  margin: 0 10px;         /* Optional spacing between logos */
+}
+
+
 /* Specify the colors for the sections */
 section {
   padding: var(--space-2xl) var(--space-l);
@@ -312,51 +320,6 @@ section#footer {
   margin-top: var(--space-xl);
 }
 
-/* contact section
-.contact_form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form_group {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
-}
-
-textarea {
-  resize: vertical;
-  height: 150px;
-}
-
-button[type="submit"] {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-} */
 
 #fun-facts {
   padding: var(--space-xl) var(--space-l);
