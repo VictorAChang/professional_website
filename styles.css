@@ -236,9 +236,38 @@ section#footer {
   padding: var(--space-s) 0;
   background: linear-gradient(rgba(26, 26, 64, 0.9), rgba(26, 26, 64, 0.9));
 }
+/* .site_header_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+} */
+
 .site_header_nav ul li a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.site_header_nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent, #8a2be2);
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.site_header_nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.site_header_nav ul li a:hover {
+  color: var(--color-accent, #8a2be2);
 }
 
 /* hero css */
