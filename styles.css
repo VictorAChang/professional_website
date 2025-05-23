@@ -300,11 +300,17 @@ section#footer {
   }
 }
 .about_figure {
-  padding: var(--space-xl) 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc;
-  display: inline-block;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to right, #6a11cb, #2575fc) border-box;
+  box-shadow: 0 0 15px rgba(100, 100, 255, 0.3);
+  transition: box-shadow 0.4s ease;
+}
+.about_figure:hover {
+  box-shadow: 0 0 25px rgba(100, 100, 255, 0.6);
+  transform: rotate(-5deg) scale(1.2);
 }
 .about_img {
   width: 300px;
