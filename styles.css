@@ -48,9 +48,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: monospace;
 }
-
+/* 
 /* Remove default margin */
 body,
 h1,
@@ -70,7 +70,7 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
   padding: 0;
-}
+} */
 
 /* Set core root defaults */
 html:focus-within {
