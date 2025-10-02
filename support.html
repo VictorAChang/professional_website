@@ -3,64 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Things I Support - Victor Chang</title>
+    <title>Beliefs</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-2">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-2"
+      >
         <div class="container">
-          <a class="navbar-brand fw-bold me-3" href="index.html">Victor's Website</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fw-bold me-3" href="index.html"
+            >Victor's Website</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto gap-2">
-              <li class="nav-item"><a href="index.html" class="nav-link px-2">Home</a></li>
-              <li class="nav-item"><a href="about.html" class="nav-link px-2">About</a></li>
-              <li class="nav-item"><a href="work.html" class="nav-link px-2">Work</a></li>
-              <li class="nav-item"><a href="traveling.html" class="nav-link px-2">Traveling</a></li>
-              <li class="nav-item"><a href="support.html" class="nav-link px-2">Things I Support</a></li>
-              <li class="nav-item"><button id="darkModeToggle" class="btn btn-outline-secondary px-2 d-flex align-items-center gap-2" type="button"><span id="darkModeIcon" class="bi bi-moon-stars-fill"></span><span id="darkModeText">Dark Mode</span></button></li>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link px-2">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link px-2">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="work.html" class="nav-link px-2">Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="traveling.html" class="nav-link px-2">Travels</a>
+              </li>
+              <li class="nav-item">
+                <a href="support.html" class="nav-link px-2">Beliefs</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  id="darkModeToggle"
+                  class="btn btn-outline-secondary px-2 d-flex align-items-center gap-2"
+                  type="button"
+                >
+                  <span id="darkModeIcon" class="bi bi-moon-stars-fill"></span>
+                  <span id="darkModeText">Dark Mode</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main class="pt-5">
-      <div class="container py-5">
-        <h2 class="fw-bold text-center mb-5">Things I Support</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow rounded-4 border-0 text-center">
+      <div class="container py-5 text-center">
+        <h2
+          class="fw-bold text-center mb-5 support-h2 gradient-text heading-box"
+          style="font-size: 2.5rem; letter-spacing: 2px"
+        >
+          <span class="d-inline-block align-middle me-2"
+            ><i class="bi bi-heart-fill" style="color: #f9a826"></i
+          ></span>
+          My Beliefs
+          <span class="d-inline-block align-middle ms-2"
+            ><i class="bi bi-people-fill" style="color: #f9a826"></i
+          ></span>
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow rounded-4 border-0 text-center flex-fill"
+            >
+              <img
+                src="assets/background_image.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Ending Poverty"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Ending Poverty</h5>
-                <p class="card-text text-muted">I support organizations and initiatives that work to end poverty and provide opportunities for all.</p>
+                <p class="card-text text-muted">
+                  I support organizations and initiatives that work to end
+                  poverty and provide opportunities for all.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow rounded-4 border-0 text-center">
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow rounded-4 border-0 text-center flex-fill"
+            >
+              <img
+                src="assets/background_image.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Fighting Homelessness"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Fighting Homelessness</h5>
-                <p class="card-text text-muted">I believe in helping those without homes and supporting shelters and programs for the homeless.</p>
+                <p class="card-text text-muted">
+                  I believe in helping those without homes and supporting
+                  shelters and programs for the homeless.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow rounded-4 border-0 text-center">
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow rounded-4 border-0 text-center flex-fill"
+            >
+              <img
+                src="assets/background_image.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Ending Cancer"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Ending Cancer</h5>
-                <p class="card-text text-muted">I support research and organizations dedicated to finding cures and supporting those affected by cancer.</p>
+                <p class="card-text text-muted">
+                  I support research and organizations dedicated to finding
+                  cures and supporting those affected by cancer.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow rounded-4 border-0 text-center">
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow rounded-4 border-0 text-center flex-fill"
+            >
+              <img
+                src="assets/background_image.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Faith in Christ"
+              />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Faith in Christ</h5>
-                <p class="card-text text-muted">My Christian faith inspires me to support love, hope, and compassion for all people.</p>
+                <p class="card-text text-muted">
+                  My Christian faith inspires me to support love, hope, and
+                  compassion for all people.
+                </p>
               </div>
             </div>
           </div>
@@ -76,7 +162,10 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
