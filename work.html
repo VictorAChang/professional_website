@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Work - Victor Chang</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-2"
+        style="margin-bottom: 2rem"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold me-3" href="index.html">Victor's Website</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-2">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link px-2">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link px-2">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="work.html" class="nav-link px-2">Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="traveling.html" class="nav-link px-2">Traveling</a>
+              </li>
+              <li class="nav-item">
+                <a href="support.html" class="nav-link px-2">Things I Support</a>
+              </li>
+              <li class="nav-item">
+                <button id="darkModeToggle" class="btn btn-outline-secondary px-2 d-flex align-items-center gap-2" type="button">
+                  <span id="darkModeIcon" class="bi bi-moon-stars-fill"></span>
+                  <span id="darkModeText">Dark Mode</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="work" class="py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center mb-4 mt-5">
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <a href="https://github.com/VictorAChang" target="_blank">
+                <img
+                  src="assets/icon-github.svg"
+                  alt="GitHub"
+                  width="54"
+                  height="54"
+                  class="mb-2"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/victorachang/" target="_blank">
+                <img
+                  src="assets/icon-linkedin.svg"
+                  alt="LinkedIn"
+                  width="54"
+                  height="54"
+                  class="mb-2"
+                />
+              </a>
+              <a href="https://victorachang.github.io/resume/resume.pdf" target="_blank">
+                <img
+                  src="assets/resume_icon.png"
+                  alt="Resume"
+                  width="54"
+                  height="54"
+                  class="mb-2"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+              <h4 class="h5 mb-4 text-center"></h4>
+              <p class="mb-4 text-center">
+                My education in engineering, business, and data analytics comes from recognized enterprises such as USASOC AI Division, Regent University, University of South Florida, and Galvanize, Inc.
+              </p>
+              <ul class="list-inline d-flex flex-wrap justify-content-center align-items-center gap-4 mb-0">
+                <li class="list-inline-item">
+                  <a href="https://www.army.mil/standto/archive/2018/10/31/" target="_blank" class="d-inline-block">
+                    <img src="assets/usasoc.png" alt="USASOC AI" class="rounded shadow-sm" style="height: 48px; background: #fff; padding: 6px;" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.regent.edu/program/mba-business-analytics/" target="_blank" class="d-inline-block">
+                    <img src="assets/regent.png" alt="Regent" class="rounded shadow-sm" style="height: 48px; background: #fff; padding: 6px;" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://catalog.usf.edu/preview_program.php?catoid=23&poid=11538" target="_blank" class="d-inline-block">
+                    <img src="assets/usf.png" alt="USF" class="rounded shadow-sm" style="height: 48px; background: #fff; padding: 6px;" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.galvanize.com/data-analytics-immersive-program/" target="_blank" class="d-inline-block">
+                    <img src="assets/galvanize.png" alt="Galvanize" class="rounded shadow-sm" style="height: 48px; background: #fff; padding: 6px;" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <!-- Work Carousel Section -->
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div id="workCarousel" class="carousel slide shadow rounded-4 p-2 bg-white" data-bs-ride="carousel" style="max-width: 500px; margin: 0 auto;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="https://example.com/work1" target="_blank">
+                        <img src="assets/background_image.jpg" class="d-block w-100 rounded-4" alt="Work 1" style="object-fit: cover; height: 220px;">
+                      </a>
+                      <div class="carousel-caption d-block text-center" style="background: rgba(0,0,0,0.5); border-radius: 1rem; padding: 0.5rem;">
+                        <h5 class="fw-bold text-white mb-1">Project Title 1</h5>
+                        <p class="text-white mb-0">Short description of work 1.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://example.com/work2" target="_blank">
+                        <img src="assets/background_image.jpg" class="d-block w-100 rounded-4" alt="Work 2" style="object-fit: cover; height: 220px;">
+                      </a>
+                      <div class="carousel-caption d-block text-center" style="background: rgba(0,0,0,0.5); border-radius: 1rem; padding: 0.5rem;">
+                        <h5 class="fw-bold text-white mb-1">Project Title 2</h5>
+                        <p class="text-white mb-0">Short description of work 2.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://example.com/work3" target="_blank">
+                        <img src="assets/background_image.jpg" class="d-block w-100 rounded-4" alt="Work 3" style="object-fit: cover; height: 220px;">
+                      </a>
+                      <div class="carousel-caption d-block text-center" style="background: rgba(0,0,0,0.5); border-radius: 1rem; padding: 0.5rem;">
+                        <h5 class="fw-bold text-white mb-1">Project Title 3</h5>
+                        <p class="text-white mb-0">Short description of work 3.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-light py-4 mt-auto">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <p class="mb-0 text-muted">&copy; 2025 Victor Chang</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
