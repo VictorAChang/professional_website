@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Traveling</title>
+    <title>Travels</title>
   </head>
   <body>
     <header>
@@ -64,215 +64,178 @@
       </nav>
     </header>
     <main class="pt-5">
-      <div class="container py-5 text-center">
-        <h2
-          class="fw-bold text-center mb-5 gradient-text heading-box"
-          style="font-size: 2.5rem; letter-spacing: 2px"
-        >
-          <span class="d-inline-block align-middle me-2"
-            ><i class="bi bi-geo-alt-fill" style="color: #f9a826"></i
-          ></span>
-          My Travels
-          <span class="d-inline-block align-middle ms-2"
-            ><i class="bi bi-airplane-fill" style="color: #f9a826"></i
-          ></span>
-        </h2>
-        <!-- South America Carousel -->
-        <div class="mb-5 text-center">
-          <h4 class="fw-bold text-center mb-3 travel-h4">South America</h4>
-          <div
-            id="carouselSouthAmerica"
-            class="carousel slide shadow rounded-4 p-2 bg-white mx-auto"
-            data-bs-ride="carousel"
-            style="max-width: 500px"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/southamerica1.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="Brazil"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">Brazil</h5>
-                  <p class="text-white mb-0">Rio de Janeiro, Sao Paulo</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/southamerica2.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="Argentina"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">Argentina</h5>
-                  <p class="text-white mb-0">Buenos Aires, Patagonia</p>
-                </div>
-              </div>
+      <section id="work" class="py-5 bg-light">
+        <div class="container py-5 text-center">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+              <h4 class="h5 mb-4 text-center"></h4>
+              <p class="mb-4 text-center">
+                My travels have taken me across North and South America and Central America, as well
+                as Europe. Here are some highlights from my journeys. What makes these adventures truly
+                memorable is having someone special to share them with. Many more to come!
+              </p>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselSouthAmerica"
-              data-bs-slide="prev"
+          </div>
+          <!-- South America Carousel -->
+          <div class="mb-5 text-center">
+            <h4 class="fw-bold text-center mb-3 travel-h4">Latin America</h4>
+            <div
+              id="carouselSouthAmerica"
+              class="carousel slide shadow rounded-4 p-2 bg-white mx-auto"
+              data-bs-ride="carousel"
+              style="max-width: 500px"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselSouthAmerica"
-              data-bs-slide="next"
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/traveling/casco.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="Brazil"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">Panama</h5>
+                    <p class="text-white mb-0">Casco Viejo, Panama City</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/traveling/taboga.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="Argentina"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">Panama</h5>
+                    <p class="text-white mb-0">Tobago Island, Panama City</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselSouthAmerica"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselSouthAmerica"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- US Carousel -->
+          <div class="mb-5 text-center">
+            <h4 class="fw-bold text-center mb-3 travel-h4">North America</h4>
+            <div
+              id="carouselUS"
+              class="carousel slide shadow rounded-4 p-2 bg-white mx-auto"
+              data-bs-ride="carousel"
+              style="max-width: 500px"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/traveling/alcatraz.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="New York"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">United States</h5>
+                    <p class="text-white mb-0">Alcatraz, San Francisco</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/traveling/hockinghills.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="California"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">United States</h5>
+                    <p class="text-white mb-0">Hocking Hills State Park, Ohio</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/traveling/dc.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="California"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">United States</h5>
+                    <p class="text-white mb-0">Washington D.C., Virginia</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/traveling/chinatown.jpg"
+                    class="d-block w-100 rounded-4"
+                    alt="California"
+                    style="object-fit: cover; height: 220px"
+                  />
+                  <div
+                    class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
+                  >
+                    <h5 class="fw-bold text-white mb-1">United States</h5>
+                    <p class="text-white mb-0">Chinatown, San Francisco</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselUS"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselUS"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-        <!-- US Carousel -->
-        <div class="mb-5 text-center">
-          <h4 class="fw-bold text-center mb-3 travel-h4">United States</h4>
-          <div
-            id="carouselUS"
-            class="carousel slide shadow rounded-4 p-2 bg-white mx-auto"
-            data-bs-ride="carousel"
-            style="max-width: 500px"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/us1.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="New York"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">New York</h5>
-                  <p class="text-white mb-0">NYC, Upstate NY</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/us2.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="California"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">California</h5>
-                  <p class="text-white mb-0">San Francisco, Los Angeles</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselUS"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselUS"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <!-- Europe Carousel -->
-        <div class="mb-5 text-center">
-          <h4 class="fw-bold text-center mb-3 travel-h4">Europe</h4>
-          <div
-            id="carouselEurope"
-            class="carousel slide shadow rounded-4 p-2 bg-white mx-auto"
-            data-bs-ride="carousel"
-            style="max-width: 500px"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/europe1.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="France"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">France</h5>
-                  <p class="text-white mb-0">Paris, Nice</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/europe2.jpg"
-                  class="d-block w-100 rounded-4"
-                  alt="Italy"
-                  style="object-fit: cover; height: 220px"
-                />
-                <div
-                  class="carousel-caption d-block text-center bg-dark bg-opacity-50 rounded-3 p-2"
-                >
-                  <h5 class="fw-bold text-white mb-1">Italy</h5>
-                  <p class="text-white mb-0">Rome, Florence</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselEurope"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselEurope"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="bg-light py-4 mt-auto">
       <div class="container">
