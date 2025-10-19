@@ -42,12 +42,24 @@ class ComponentLoader {
     }
   }
 
+  static loadWinterMode() {
+    // Dynamically load winter.js script
+    const script = document.createElement('script');
+    script.src = 'scripts/winter.js';
+    script.onload = () => console.log('Winter mode loaded successfully');
+    script.onerror = () => console.error('Failed to load winter mode');
+    document.head.appendChild(script);
+  }
+
   static async loadAllComponents() {
     // Load navbar and footer in parallel for better performance
     await Promise.all([
       this.loadNavbar(),
       this.loadFooter()
     ]);
+    
+    // Load winter mode functionality
+    this.loadWinterMode();
     
     // Dispatch custom event to notify that all components are loaded
     document.dispatchEvent(new CustomEvent('componentsLoaded'));
