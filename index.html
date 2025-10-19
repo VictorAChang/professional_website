@@ -10,94 +10,15 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/cube.css" />
     <title>Homepage</title>
   </head>
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-2"
-        style="margin-bottom: 2rem"
-      >
-        <div class="container">
-          <a class="navbar-brand fw-bold me-3" href="index.html">Victor's Website</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto gap-2">
-            <li class="nav-item">
-              <a
-            href="https://github.com/VictorAChang"
-            target="_blank"
-            class="nav-link px-2"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="GitHub"
-              >
-            <img
-              src="assets/icon-github.svg"
-              alt="GitHub"
-              width="24"
-              height="24"
-              style="vertical-align: middle;"
-            />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-            href="https://www.linkedin.com/in/VictorAChang/"
-            target="_blank"
-            class="nav-link px-2"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="LinkedIn"
-              >
-            <img
-              src="assets/icon-linkedin.svg"
-              alt="LinkedIn"
-              width="28"
-              height="28"
-              style="vertical-align: middle;"
-            />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-            href="https://victorachang.github.io/resume/resume.pdf"
-            target="_blank"
-            class="nav-link px-2"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Resume"
-              >
-            <img
-              src="assets/resume.png"
-              alt="Resume"
-              width="28"
-              height="28"
-              style="vertical-align: middle;"
-            />
-              </a>
-            </li>
-            <li class="nav-item">
-              <button id="darkModeToggle" class="btn btn-outline-secondary px-2 d-flex align-items-center gap-2" type="button">
-              <span id="darkModeIcon" class="bi bi-moon-stars-fill"></span>
-              <span id="darkModeText">Dark Mode</span>
-              </button>
-            </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div id="navbar-container">
+        <!-- Navbar will be loaded here -->
+      </div>
     </header>
     <main>
       <section
@@ -109,113 +30,459 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <h1 class="display-3 fw-bold mb-3">Victor Alfonso Chang</h1>
-              <p class="lead fs-3 mb-4">Data Analyst / Developer Enthusiast</p>
+              <p class="lead fs-3 mb-4">This is my personal website showcasing my projects, travels, adventures</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="container py-5">
-        <div class="row g-4 justify-content-center">
-          <!-- About -->
-          <div class="col-md-6 col-lg-6">
-            <a href="about.html" class="text-decoration-none">
-              <div class="card h-100 shadow rounded-4 border-0 text-center">
-                <img
-                  src="assets/about.jpg"
-                  class="card-img-top rounded-top-4"
-                  alt="About"
-                  style="height: 240px; object-fit: cover; width: 100%;"
-                  srcset="assets/about.jpg 600w, assets/about.jpg 1200w"
-                  sizes="(min-width: 992px) 100vw, 180px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">About Me</h5>
-                  <p class="card-text text-muted">
-                    Learn more about my background and interests.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Work -->
-          <div class="col-md-6 col-lg-6">
-            <a href="work.html" class="text-decoration-none">
-              <div class="card h-100 shadow rounded-4 border-0 text-center">
-                <img
-                  src="assets/work.png"
-                  class="card-img-top rounded-top-4"
-                  alt="Work"
-                  style="height: 240px; object-fit: cover; width: 100%;"
-                  srcset="assets/work.png 600w, assets/work.png 1200w"
-                  sizes="(min-width: 992px) 100vw, 240px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Work Experience</h5>
-                  <p class="card-text text-muted">
-                    See my professional projects and experience.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Traveling -->
-          <div class="col-md-6 col-lg-6">
-            <a href="traveling.html" class="text-decoration-none">
-              <div class="card h-100 shadow rounded-4 border-0 text-center">
-                <img
-                  src="assets/traveling.jpg"
-                  class="card-img-top rounded-top-4"
-                  alt="Traveling"
-                  style="height: 240px; object-fit: cover; width: 100%;"
-                  srcset="assets/traveling.jpg 600w, assets/traveling.jpg 1200w"
-                  sizes="(min-width: 992px) 100vw, 240px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Travels</h5>
-                  <p class="card-text text-muted">Collection of my travels.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- Things I Support -->
-          <div class="col-md-6 col-lg-6">
-            <a href="support.html" class="text-decoration-none">
-              <div class="card h-100 shadow rounded-4 border-0 text-center">
-                <img
-                  src="assets/beliefs.png"
-                  class="card-img-top rounded-top-4"
-                  alt="Family"
-                  style="height: 240px; object-fit: cover; width: 100%;"
-                  srcset="assets/beliefs.png 600w, assets/beliefs.png 1200w"
-                  sizes="(min-width: 992px) 100vw, 240px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title fw-bold">Beliefs</h5>
-                  <p class="card-text text-muted">
-                    These are the ones that matter the most.
-                  </p>
-                </div>
-              </div>
-            </a>
+      
+      <!-- Dynamic 3D Cube Navigation -->
+      <div class="container-fluid py-5" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); min-height: 80vh;">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 text-center">
+        <h2 class="text-white mb-5 display-4 fw-bold">Explore My World</h2>
+        
+        <!-- Cube Container -->
+        <div class="cube-scene">
+          <div class="cube" id="dynamicCube">
+        <!-- Front Face - About Me -->
+        <div class="cube-face front" data-page="about">
+          <div class="face-content">
+            <div class="face-icon">👨‍💻</div>
+            <h3>About Me</h3>
+            <p>Discover my journey, skills, and passion for technology</p>
+            <div class="face-overlay">
+          <a href="about.html" class="btn btn-light btn-lg">Explore</a>
+            </div>
           </div>
         </div>
+        
+        <!-- Back Face - Web Development -->
+        <div class="cube-face back" data-page="webdev">
+          <div class="face-content">
+            <div class="face-icon">🚀</div>
+            <h3>Web Development</h3>
+            <p>Innovative web solutions and creative projects</p>
+            <div class="face-overlay">
+          <a href="webdev.html" class="btn btn-light btn-lg">Explore</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Face - Travels -->
+        <div class="cube-face right" data-page="travels">
+          <div class="face-content">
+            <div class="face-icon">🌍</div>
+            <h3>Adventures</h3>
+            <p>Join me on incredible journeys around the world</p>
+            <div class="face-overlay">
+          <a href="traveling.html" class="btn btn-light btn-lg">Explore</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left Face - Data Projects -->
+        <div class="cube-face left" data-page="data">
+          <div class="face-content">
+            <div class="face-icon">📊</div>
+            <h3>Data Science</h3>
+            <p>Insights through data analysis and visualization</p>
+            <div class="face-overlay">
+          <a href="data.html" class="btn btn-light btn-lg">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Face - Contact Me -->
+        <div class="cube-face top" data-page="contact">
+          <div class="face-content">
+            <div class="face-icon">📧</div>
+            <h3>Contact Me</h3>
+            <p>Let's connect and discuss opportunities</p>
+            <div class="face-overlay">
+          <a href="mailto:victor@example.com" class="btn btn-light btn-lg">Contact</a>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        
+        <!-- Enhanced Navigation Controls -->
+        <div class="cube-navigation mt-5">
+          <div class="nav-section">
+        <h6 class="text-white mb-3">Navigate</h6>
+        <div class="nav-row">
+          <button class="nav-btn active" data-rotation="rotateY(0deg)" data-face="front">
+        <span class="nav-icon">👨‍💻</span>
+        <span class="nav-text">About</span>
+          </button>
+          <button class="nav-btn" data-rotation="rotateY(-90deg)" data-face="right">
+        <span class="nav-icon">🌍</span>
+        <span class="nav-text">Travels</span>
+          </button>
+          <button class="nav-btn" data-rotation="rotateY(-180deg)" data-face="back">
+        <span class="nav-icon">🚀</span>
+        <span class="nav-text">Web Dev</span>
+          </button>
+          <button class="nav-btn" data-rotation="rotateY(-270deg)" data-face="left">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">Data</span>
+          </button>
+          <button class="nav-btn" data-rotation="rotateX(-90deg)" data-face="top">
+        <span class="nav-icon">📧</span>
+        <span class="nav-text">Contact</span>
+          </button>
+        </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+      /* Enhanced Cube Scene Styles */
+      .cube-scene {
+        width: 300px;
+        height: 300px;
+        perspective: 1200px;
+        perspective-origin: center center;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .cube {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation: autoRotate 20s linear infinite;
+      }
+
+      @keyframes autoRotate {
+        0% { 
+          transform: rotateY(0deg) rotateX(0deg);
+        }
+        25% { 
+          transform: rotateY(-90deg) rotateX(0deg);
+        }
+        50% { 
+          transform: rotateY(-180deg) rotateX(0deg);
+        }
+        75% { 
+          transform: rotateY(-270deg) rotateX(0deg);
+        }
+        87.5% { 
+          transform: rotateY(-360deg) rotateX(-90deg);
+        }
+        100% { 
+          transform: rotateY(-360deg) rotateX(0deg);
+        }
+      }
+
+      .cube-face {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(15px);
+        box-shadow: 
+          0 8px 32px rgba(0, 0, 0, 0.4),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      .cube-face:hover {
+        transform: scale(1.05);
+        box-shadow: 
+          0 15px 50px rgba(0, 0, 0, 0.6),
+          inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.8);
+      }
+
+      /* Professional 3D Positioning for all faces */
+      .cube-face.front { 
+        transform: rotateY(0deg) translateZ(150px); 
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      }
+      .cube-face.back { 
+        transform: rotateY(180deg) translateZ(150px); 
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      }
+      .cube-face.right { 
+        transform: rotateY(90deg) translateZ(150px); 
+        background: linear-gradient(135deg, #4a6741 0%, #647656 100%);
+      }
+      .cube-face.left { 
+        transform: rotateY(-90deg) translateZ(150px); 
+        background: linear-gradient(135deg, #5c4033 0%, #8b6f47 100%);
+      }
+      .cube-face.top { 
+        transform: rotateX(90deg) translateZ(150px); 
+        background: linear-gradient(135deg, #36454f 0%, #4f5b66 100%);
+      }
+
+      .face-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+      }
+
+      .face-icon {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        animation: iconPulse 3s infinite;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      }
+
+      @keyframes iconPulse {
+        0%, 100% { 
+          transform: scale(1);
+          text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        50% { 
+          transform: scale(1.1);
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      .face-content h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .face-content p {
+        font-size: 1rem;
+        opacity: 0.9;
+        line-height: 1.4;
+        margin-bottom: 0;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .face-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 3;
+        backdrop-filter: blur(10px);
+      }
+
+      .cube-face:hover .face-overlay {
+        opacity: 1;
+      }
+
+      /* Enhanced Navigation Styles */
+      .cube-navigation {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .nav-section {
+        margin-bottom: 20px;
+      }
+
+      .nav-section h6 {
+        opacity: 0.8;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .nav-row {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .nav-btn {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        padding: 12px 16px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        min-width: 70px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .nav-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+      }
+
+      .nav-btn:hover::before {
+        left: 100%;
+      }
+
+      .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.7);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .nav-btn.active {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.9);
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+      }
+
+      .nav-icon {
+        font-size: 1.4rem;
+      }
+
+      .nav-text {
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .cube-scene {
+          width: 250px;
+          height: 250px;
+        }
+        
+        .cube-face {
+          width: 250px;
+          height: 250px;
+        }
+        
+        .cube-face.front { transform: rotateY(0deg) translateZ(125px); }
+        .cube-face.back { transform: rotateY(180deg) translateZ(125px); }
+        .cube-face.right { transform: rotateY(90deg) translateZ(125px); }
+        .cube-face.left { transform: rotateY(-90deg) translateZ(125px); }
+        .cube-face.top { transform: rotateX(90deg) translateZ(125px); }
+        
+        .face-content {
+          padding: 20px;
+        }
+        
+        .face-content h3 {
+          font-size: 1.4rem;
+        }
+        
+        .face-icon {
+          font-size: 2.8rem;
+        }
+      }
+      </style>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const cube = document.getElementById('dynamicCube');
+        const navButtons = document.querySelectorAll('.nav-btn');
+        
+        let currentRotation = { x: 0, y: 0, z: 0 };
+
+        function updateCubeRotation() {
+          cube.style.animation = 'none';
+          cube.style.transform = `rotateX(${currentRotation.x}deg) rotateY(${currentRotation.y}deg) rotateZ(${currentRotation.z}deg)`;
+        }
+
+        function resumeAutoRotation() {
+          cube.style.animation = 'autoRotate 20s linear infinite';
+          currentRotation = { x: 0, y: 0, z: 0 };
+        }
+
+        function updateActiveButton() {
+          navButtons.forEach(btn => btn.classList.remove('active'));
+          
+          navButtons.forEach(btn => {
+        const rotation = btn.dataset.rotation;
+        if (rotation.includes('rotateY') && currentRotation.x === 0) {
+          const match = rotation.match(/rotateY\((-?\d+)deg\)/);
+          if (match && parseInt(match[1]) === currentRotation.y) {
+        btn.classList.add('active');
+          }
+        } else if (rotation.includes('rotateX') && currentRotation.y === 0) {
+          const match = rotation.match(/rotateX\((-?\d+)deg\)/);
+          if (match && parseInt(match[1]) === currentRotation.x) {
+        btn.classList.add('active');
+          }
+        }
+          });
+        }
+
+        // Navigation button event listeners
+        navButtons.forEach(button => {
+          button.addEventListener('click', () => {
+        const rotation = button.dataset.rotation;
+        
+        if (rotation.includes('rotateY')) {
+          const match = rotation.match(/rotateY\((-?\d+)deg\)/);
+          currentRotation.y = parseInt(match[1]);
+          currentRotation.x = 0;
+          currentRotation.z = 0;
+        } else if (rotation.includes('rotateX')) {
+          const match = rotation.match(/rotateX\((-?\d+)deg\)/);
+          currentRotation.x = parseInt(match[1]);
+          currentRotation.y = 0;
+          currentRotation.z = 0;
+        }
+        
+        updateCubeRotation();
+        updateActiveButton();
+        
+        // Resume auto rotation after 5 seconds
+        setTimeout(resumeAutoRotation, 5000);
+          });
+        });
+
+        // Initialize
+        updateActiveButton();
+      });
+      </script>
+
+        
       </div>
     </main>
-    <footer class="bg-light py-4 mt-auto">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-auto text-center">
-            <p class="mb-0 text-muted">&copy; 2025 Victor Chang</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-container">
+      <!-- Footer will be loaded here -->
+    </div>
     <!-- Bootstrap JavaScript Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <!-- <script src="scripts/cube.js"></script> -->
   </body>
 </html>
