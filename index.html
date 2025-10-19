@@ -36,14 +36,22 @@
       </div>
       </section>
       
-      <!-- Dynamic 3D Cube Navigation -->
-      <div class="container-fluid py-5" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); min-height: 80vh;">
-      <div class="row justify-content-center align-items-center">
-      <div class="col-12 text-center"></div>
-      <h2 class="text-white mb-5 display-4 fw-bold">Explore My World</h2>
+      <!-- Header Section -->
+      <div class="container-fluid py-3">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="mb-0 display-5 fw-bold cube-heading">Explore My World</h2>
+          </div>
+        </div>
+      </div>
       
-      <!-- Cube Container -->
-      <div class="cube-scene">
+      <!-- Dynamic 3D Cube Navigation -->
+      <div class="container-fluid py-5 cube-background">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+        
+        <!-- Cube Container -->
+        <div class="cube-scene">
       <div class="cube" id="dynamicCube">
       <!-- Front Face - About Me -->
       <div class="cube-face front" data-page="about">
@@ -64,7 +72,7 @@
       <h3>Web Development</h3>
       <p>Innovative web solutions and creative projects</p>
       <div class="face-overlay">
-        <a href="webdev.html" class="btn btn-light btn-lg">Explore</a>
+        <a href="webdev.html" class="btn btn-dark btn-lg">Explore</a>
       </div>
         </div>
       </div>
@@ -88,7 +96,7 @@
       <h3>Data Science</h3>
       <p>Insights through data analysis and visualization</p>
       <div class="face-overlay">
-        <a href="data.html" class="btn btn-light btn-lg">Explore</a>
+        <a href="data.html" class="btn btn-dark btn-lg">Explore</a>
       </div>
         </div>
       </div>
@@ -112,232 +120,15 @@
       <h3>Contact Me</h3>
       <p>Let's connect and discuss opportunities</p>
       <div class="face-overlay">
-        <a href="mailto:vchang7272@gmail.com?subject=Web Development Services Inquiry&body=Hi Victor,%0D%0A%0D%0AI'm interested in your web development services. I'd like to discuss:%0D%0A%0D%0A☐ Personal website development%0D%0A☐ Small web application concept%0D%0A☐ Other web development project%0D%0A%0D%0AProject Details:%0D%0A- Brief description of what I'm looking for:%0D%0A%0D%0A- Timeline and budget considerations:%0D%0A%0D%0A- Any specific features or requirements:%0D%0A%0D%0A%0D%0APlease let me know your availability for a consultation.%0D%0A%0D%0ABest regards," class="btn btn-light btn-lg">Contact</a>
-      </div>
-      </div>
+        <a href="mailto:vchang7272@gmail.com?subject=Web Development Services Inquiry&body=Hi Victor,%0D%0A%0D%0AI'm interested in your web development services. I'd like to discuss:%0D%0A%0D%0A☐ Personal website development%0D%0A☐ Small web application concept%0D%0A☐ Other web development project%0D%0A%0D%0AProject Details:%0D%0A- Brief description of what I'm looking for:%0D%0A%0D%0A- Timeline and budget considerations:%0D%0A%0D%0A- Any specific features or requirements:%0D%0A%0D%0A%0D%0APlease let me know your availability for a consultation.%0D%0A%0D%0ABest regards," class="btn btn-dark btn-lg">Contact</a>
+        </div>
+          </div>
         </div>
       </div>
         </div>
       </div>
       </div>
         </div>
-
-        <style>
-        /* Enhanced Cube Scene Styles */
-        .cube-scene {
-      width: 300px;
-      height: 300px;
-      perspective: 1200px;
-      perspective-origin: center center;
-      margin: 0 auto;
-      position: relative;
-        }
-
-        .cube {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: autoRotate 24s linear infinite;
-        }
-
-        @keyframes autoRotate {
-      0% { 
-        transform: rotateX(0deg) rotateY(0deg);
-      }
-      12.5% { 
-        transform: rotateX(-90deg) rotateY(0deg);
-      }
-      25% { 
-        transform: rotateX(-90deg) rotateY(-90deg);
-      }
-      37.5% { 
-        transform: rotateX(0deg) rotateY(-90deg);
-      }
-      50% { 
-        transform: rotateX(0deg) rotateY(-180deg);
-      }
-      62.5% { 
-        transform: rotateX(90deg) rotateY(-180deg);
-      }
-      75% { 
-        transform: rotateX(90deg) rotateY(-270deg);
-      }
-      87.5% { 
-        transform: rotateX(0deg) rotateY(-270deg);
-      }
-      100% { 
-        transform: rotateX(0deg) rotateY(-360deg);
-      }
-        }
-
-        .cube-face {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 15px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 0.4s ease;
-      backdrop-filter: blur(15px);
-      box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-      pointer-events: auto;
-        }
-
-        .cube-face:hover .face-overlay {
-      opacity: 1;
-        }
-
-        /* Professional 3D Positioning for all faces */
-        .cube-face.front { 
-      transform: rotateY(0deg) translateZ(150px); 
-      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-        }
-        .cube-face.back { 
-      transform: rotateY(180deg) translateZ(150px); 
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-        }
-        .cube-face.right { 
-      transform: rotateY(90deg) translateZ(150px); 
-      background: linear-gradient(135deg, #4a6741 0%, #647656 100%);
-        }
-        .cube-face.left { 
-      transform: rotateY(-90deg) translateZ(150px); 
-      background: linear-gradient(135deg, #5c4033 0%, #8b6f47 100%);
-        }
-        .cube-face.top { 
-      transform: rotateX(90deg) translateZ(150px); 
-      background: linear-gradient(135deg, #7b68ee 0%, #9370db 100%);
-        }
-        .cube-face.bottom { 
-      transform: rotateX(-90deg) translateZ(150px); 
-      background: linear-gradient(135deg, #36454f 0%, #4f5b66 100%);
-        }
-
-        .face-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      padding: 30px;
-      text-align: center;
-      color: white;
-      position: relative;
-      z-index: 2;
-        }
-
-        .face-icon {
-      font-size: 3.5rem;
-      margin-bottom: 15px;
-      animation: iconPulse 3s infinite;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-        }
-
-        @keyframes iconPulse {
-      0%, 100% { 
-        transform: scale(1);
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-      }
-      50% { 
-        transform: scale(1.1);
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
-      }
-        }
-
-        .face-content h3 {
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-bottom: 12px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .face-content p {
-      font-size: 1rem;
-      opacity: 0.9;
-      line-height: 1.4;
-      margin-bottom: 0;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-        }
-        .face-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-      pointer-events: none;
-        }
-
-        .cube-face:hover .face-overlay {
-      opacity: 1;
-      pointer-events: auto;
-        }
-
-        .cube-face.right,
-        .cube-face.left {
-      z-index: 10;
-        }
-        
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-      .cube-scene {
-        width: 250px;
-        height: 250px;
-      }
-      
-      .cube-face {
-        width: 250px;
-        height: 250px;
-      }
-      
-      .cube-face.front { transform: rotateY(0deg) translateZ(125px); }
-      .cube-face.back { transform: rotateY(180deg) translateZ(125px); }
-      .cube-face.right { transform: rotateY(90deg) translateZ(125px); }
-      .cube-face.left { transform: rotateY(-90deg) translateZ(125px); }
-      .cube-face.top { transform: rotateX(90deg) translateZ(125px); }
-      .cube-face.bottom { transform: rotateX(-90deg) translateZ(125px); }
-      
-      .face-content {
-        padding: 20px;
-      }
-      
-      .face-content h3 {
-        font-size: 1.4rem;
-      }
-      
-      .face-icon {
-        font-size: 2.8rem;
-      }
-        }
-        </style>
-
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-      const cube = document.getElementById('dynamicCube');
-
-      // Pause auto-rotation on cube hover, resume on mouse leave
-      cube.addEventListener('mouseenter', () => {
-        cube.style.animationPlayState = 'paused';
-      });
-
-      cube.addEventListener('mouseleave', () => {
-        cube.style.animationPlayState = 'running';
-      });
-        });
-        </script>
       </div>
     </main>
     <div id="footer-container">
@@ -351,6 +142,6 @@
     ></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/toggle.js"></script>
-    <!-- <script src="scripts/cube.js"></script> -->
+    <script src="scripts/cube.js"></script>
   </body>
 </html>

@@ -1,182 +1,174 @@
-/* 3D Cube Navigation Styles */
-
-/* Cube container and main structure */
-.cube-container {
+/* Enhanced Cube Scene Styles */
+.cube-scene {
+  width: 300px;
+  height: 300px;
   perspective: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  margin: 2rem 0;
+  perspective-origin: center center;
+  margin: 2rem auto 0 auto;
+  position: relative;
 }
 
 .cube {
+  width: 100%;
+  height: 100%;
   position: relative;
-  width: 300px;
-  height: 300px;
   transform-style: preserve-3d;
-  transition: transform 0.8s ease-in-out;
-  cursor: pointer;
+  transition: transform 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: autoRotate 24s linear infinite;
 }
 
-/* Cube face styling */
+@keyframes autoRotate {
+  0% { 
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  12.5% { 
+    transform: rotateX(-90deg) rotateY(0deg);
+  }
+  25% { 
+    transform: rotateX(-90deg) rotateY(-90deg);
+  }
+  37.5% { 
+    transform: rotateX(0deg) rotateY(-90deg);
+  }
+  50% { 
+    transform: rotateX(0deg) rotateY(-180deg);
+  }
+  62.5% { 
+    transform: rotateX(90deg) rotateY(-180deg);
+  }
+  75% { 
+    transform: rotateX(90deg) rotateY(-270deg);
+  }
+  87.5% { 
+    transform: rotateX(0deg) rotateY(-270deg);
+  }
+  100% { 
+    transform: rotateX(0deg) rotateY(-360deg);
+  }
+}
+
 .cube-face {
   position: absolute;
   width: 300px;
   height: 300px;
-  border: 3px solid #dee2e6;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(15px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  pointer-events: auto;
+}
+
+.cube-face:hover .face-overlay {
+  opacity: 1;
+}
+
+/* Color-blind friendly tech-savvy color scheme */
+.cube-face.front { 
+  transform: rotateY(0deg) translateZ(150px); 
+  background: linear-gradient(135deg, #0066cc 0%, #004499 100%); /* Bright Blue */
+}
+.cube-face.back { 
+  transform: rotateY(180deg) translateZ(150px); 
+  background: linear-gradient(135deg, #ff6600 0%, #cc5200 100%); /* Vibrant Orange */
+}
+.cube-face.right { 
+  transform: rotateY(90deg) translateZ(150px); 
+  background: linear-gradient(135deg, #00cc66 0%, #009944 100%); /* Electric Green */
+}
+.cube-face.left { 
+  transform: rotateY(-90deg) translateZ(150px); 
+  background: linear-gradient(135deg, #9933cc 0%, #7a2a99 100%); /* Tech Purple */
+}
+.cube-face.top { 
+  transform: rotateX(90deg) translateZ(150px); 
+  background: linear-gradient(135deg, #cc3366 0%, #992244 100%); /* Magenta */
+}
+.cube-face.bottom { 
+  transform: rotateX(-90deg) translateZ(150px); 
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%); /* Dark Gray */
+}
+
+.face-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: inherit;
-  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.cube-face:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Cube face content styling */
-.cube-face img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.cube-face:hover img {
-  transform: scale(1.1);
-}
-
-.cube-face h3 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
+  height: 100%;
+  padding: 30px;
   text-align: center;
-}
-
-.cube-face p {
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 0;
-  padding: 0 1rem;
-  opacity: 0.8;
-}
-
-/* Cube face 3D positions */
-.cube-face.front {
-  transform: rotateY(0deg) translateZ(150px);
-}
-
-.cube-face.back {
-  transform: rotateY(180deg) translateZ(150px);
-}
-
-.cube-face.right {
-  transform: rotateY(90deg) translateZ(150px);
-}
-
-.cube-face.left {
-  transform: rotateY(-90deg) translateZ(150px);
-}
-
-.cube-face.top {
-  transform: rotateX(90deg) translateZ(150px);
-}
-
-.cube-face.bottom {
-  transform: rotateX(-90deg) translateZ(150px);
-}
-
-/* Cube rotation states */
-.cube.show-front {
-  transform: rotateY(0deg) rotateX(0deg);
-}
-
-.cube.show-back {
-  transform: rotateY(-180deg) rotateX(0deg);
-}
-
-.cube.show-right {
-  transform: rotateY(-90deg) rotateX(0deg);
-}
-
-.cube.show-left {
-  transform: rotateY(90deg) rotateX(0deg);
-}
-
-.cube.show-top {
-  transform: rotateY(0deg) rotateX(-90deg);
-}
-
-.cube.show-bottom {
-  transform: rotateY(0deg) rotateX(90deg);
-}
-
-/* Cube control buttons */
-.cube-controls {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.cube-control-btn {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  position: relative;
+  z-index: 2;
 }
 
-.cube-control-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+.face-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  animation: iconPulse 3s infinite;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-.cube-control-btn.active {
-  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
-  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-}
-
-/* Dark mode adjustments for cube */
-body.bg-dark .cube-face {
-  background: linear-gradient(135deg, #343a40 0%, #495057 100%);
-  border-color: #6c757d;
-  color: #f8f9fa !important;
-}
-
-body.bg-dark .cube-face:hover {
-  color: #f8f9fa !important;
-}
-
-body.bg-dark .cube-face p {
-  color: #ced4da !important;
-}
-
-/* Responsive design for cube */
-@media (max-width: 768px) {
-  .cube-container {
-    height: 400px;
+@keyframes iconPulse {
+  0%, 100% { 
+    transform: scale(1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   }
-  
-  .cube {
+  50% { 
+    transform: scale(1.1);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.face-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.face-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.face-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
+.cube-face:hover .face-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cube-face.right,
+.cube-face.left {
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cube-scene {
     width: 250px;
     height: 250px;
   }
@@ -186,41 +178,58 @@ body.bg-dark .cube-face p {
     height: 250px;
   }
   
-  .cube-face.front,
-  .cube-face.back {
-    transform: rotateY(0deg) translateZ(125px);
+  .cube-face.front { transform: rotateY(0deg) translateZ(125px); }
+  .cube-face.back { transform: rotateY(180deg) translateZ(125px); }
+  .cube-face.right { transform: rotateY(90deg) translateZ(125px); }
+  .cube-face.left { transform: rotateY(-90deg) translateZ(125px); }
+  .cube-face.top { transform: rotateX(90deg) translateZ(125px); }
+  .cube-face.bottom { transform: rotateX(-90deg) translateZ(125px); }
+  
+  .face-content {
+    padding: 20px;
   }
   
-  .cube-face.back {
-    transform: rotateY(180deg) translateZ(125px);
+  .face-content h3 {
+    font-size: 1.4rem;
   }
   
-  .cube-face.right {
-    transform: rotateY(90deg) translateZ(125px);
+  .face-icon {
+    font-size: 2.8rem;
   }
-  
-  .cube-face.left {
-    transform: rotateY(-90deg) translateZ(125px);
-  }
-  
-  .cube-face.top {
-    transform: rotateX(90deg) translateZ(125px);
-  }
-  
-  .cube-face.bottom {
-    transform: rotateX(-90deg) translateZ(125px);
-  }
-  
-  .cube-face img {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .cube-face h3 {
-    font-size: 1.2rem;
-  }
-  
-  .cube-face p {
-    font-size: 0.8rem;
-  }
+}
+
+/* Dark Mode Support */
+.cube-background {
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 50%, #f5f5f5 100%);
+  min-height: 50vh;
+  padding-top: 1rem;
+}
+
+.cube-heading {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+body.bg-dark .cube-heading {
+  color: #f8f9fa;
+}
+
+/* Dark Mode Cube Faces - Darker variants of the original colors */
+body.bg-dark .cube-face.front { 
+  background: linear-gradient(135deg, #003d7a 0%, #002952 100%); /* Darker Blue */
+}
+body.bg-dark .cube-face.back { 
+  background: linear-gradient(135deg, #b8400f 0%, #8f3000 100%); /* Darker Orange */
+}
+body.bg-dark .cube-face.right { 
+  background: linear-gradient(135deg, #007a3d 0%, #005c2e 100%); /* Darker Green */
+}
+body.bg-dark .cube-face.left { 
+  background: linear-gradient(135deg, #6b2699 0%, #4d1c70 100%); /* Darker Purple */
+}
+body.bg-dark .cube-face.top { 
+  background: linear-gradient(135deg, #99264d 0%, #701c36 100%); /* Darker Magenta */
+}
+body.bg-dark .cube-face.bottom { 
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); /* Even Darker Gray */
 }
