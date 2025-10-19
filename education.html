@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/education.css" />
+    <title>Education</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar-container">
+        <!-- Navbar will be loaded here -->
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="education-hero" class="py-5 bg-light" style="min-height: 10vh; margin-top: 3rem;">
+        <div class="container">
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-10 text-center">
+              <h1 class="display-4 fw-bold mb-3">Educational Journey</h1>
+              <p class="lead fs-4 mb-4">
+                "Education is not preparation for life; education is life itself." - John Dewey
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Timeline Section -->
+      <section id="education-timeline" class="py-5 bg-white">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <h2 class="fw-bold mb-4">Academic Timeline</h2>
+              <p class="text-muted">Click on any milestone to explore details</p>
+            </div>
+          </div>
+          
+          <div class="timeline-container">
+            <!-- MBA -->
+            <div class="timeline-item" data-year="2024">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-card" data-education="mba">
+                  <div class="timeline-icon">
+                    <img src="assets/usf.png" alt="USF" class="institution-logo">
+                  </div>
+                  <h4>MBA in Business Analytics</h4>
+                  <h5>University of South Florida</h5>
+                  <p class="year">2022 - 2024</p>
+                  <p class="description">
+                    Advanced analytics, machine learning, and strategic business decision-making
+                  </p>
+                  <div class="skills-tags">
+                    <span class="skill-tag">Analytics</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Strategy</span>
+                    <span class="skill-tag">Leadership</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Military Education -->
+            <div class="timeline-item" data-year="2018">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-card" data-education="military">
+                  <div class="timeline-icon">
+                    <img src="assets/usasoc.png" alt="USASOC" class="institution-logo">
+                  </div>
+                  <h4>Psychological Operations Specialist</h4>
+                  <h5>U.S. Army Special Operations Command</h5>
+                  <p class="year">2015 - 2021</p>
+                  <p class="description">
+                    Strategic communication, cultural analysis, and psychological warfare tactics
+                  </p>
+                  <div class="skills-tags">
+                    <span class="skill-tag">PSYOPS</span>
+                    <span class="skill-tag">Strategic Comm</span>
+                    <span class="skill-tag">Analysis</span>
+                    <span class="skill-tag">Leadership</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Undergraduate -->
+            <div class="timeline-item" data-year="2015">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-card" data-education="undergrad">
+                  <div class="timeline-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <h4>Bachelor's Degree</h4>
+                  <h5>Various Institutions</h5>
+                  <p class="year">2011 - 2015</p>
+                  <p class="description">
+                    Foundation in critical thinking, research, and communication
+                  </p>
+                  <div class="skills-tags">
+                    <span class="skill-tag">Research</span>
+                    <span class="skill-tag">Writing</span>
+                    <span class="skill-tag">Analysis</span>
+                    <span class="skill-tag">Communication</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Continuous Learning -->
+            <div class="timeline-item" data-year="2024+">
+              <div class="timeline-marker active"></div>
+              <div class="timeline-content">
+                <div class="timeline-card" data-education="continuous">
+                  <div class="timeline-icon">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                  </div>
+                  <h4>Continuous Learning</h4>
+                  <h5>Various Platforms & Certifications</h5>
+                  <p class="year">Ongoing</p>
+                  <p class="description">
+                    AI/ML, Web Development, Data Science, and emerging technologies
+                  </p>
+                  <div class="skills-tags">
+                    <span class="skill-tag">AI/ML</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Web Dev</span>
+                    <span class="skill-tag">Data Science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Certifications -->
+      <section id="skills-section" class="py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <h2 class="fw-bold mb-4">Skills & Certifications</h2>
+            </div>
+          </div>
+          
+          <div class="row g-4">
+            <!-- Technical Skills -->
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-category-card">
+                <div class="skill-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h4>Technical Skills</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="85"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>SQL</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="80"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="75"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>HTML/CSS</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="90"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Analytics & Data -->
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-category-card">
+                <div class="skill-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h4>Analytics & Data</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <span>Machine Learning</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="78"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Data Visualization</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="85"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Statistical Analysis</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="82"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Business Intelligence</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="80"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leadership & Soft Skills -->
+            <div class="col-md-6 col-lg-4">
+              <div class="skill-category-card">
+                <div class="skill-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>Leadership & Soft Skills</h4>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <span>Strategic Planning</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="90"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Team Leadership</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="88"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Communication</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="92"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <span>Problem Solving</span>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-level="85"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievement Showcase -->
+      <section id="achievements" class="py-5 bg-white">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+              <h2 class="fw-bold mb-4">Key Achievements</h2>
+            </div>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+                <h4>MBA Graduate</h4>
+                <p>Business Analytics specialization with focus on data-driven decision making</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <h4>Military Service</h4>
+                <p>6+ years in Special Operations with leadership and analytical experience</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <h4>Self-Taught Developer</h4>
+                <p>Mastered web development and programming through continuous learning</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="bi bi-heart-fill"></i>
+                </div>
+                <h4>Passion Projects</h4>
+                <p>Created recipe website and multiple data visualization projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <div id="footer-container">
+      <!-- Footer will be loaded here -->
+    </div>
+    
+    <!-- Bootstrap JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/education.js"></script>
+  </body>
+</html>
