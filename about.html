@@ -10,167 +10,325 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <title>About Me</title>
   </head>
   <body>
+      <div id="top"></div>
     <header>
       <div id="navbar-container">
         <!-- Navbar will be loaded here -->
       </div>
     </header>
     <main>
-      <!-- Hero Section -->
-      <section id="about-hero" class="py-5 bg-light">
-        <div class="container">
-          <div class="row justify-content-center mb-5 mt-5">
-            <div class="col-12 text-center">
-              <h1 class="display-4 fw-bold text-success mb-3">About Me</h1>
-              <p class="lead text-muted mb-4">"From PSYOPS to Python; crafting data, code, and killer recipes."</p>
-            </div>
-          </div>
+      <!-- Dynamic Hero Section with Floating Elements -->
+      <section id="hero-about" class="position-relative overflow-hidden">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
         </div>
-      </section>
-
-      <!-- About Me Section -->
-      <section id="about-content" class="py-5 bg-white">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-12">
-              <div class="bg-white rounded-3 shadow-sm p-5">
-                <div class="row align-items-center">
-                  <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <figure>
-                      <img
-                        src="assets/user.jpg"
-                        alt="Victor Chang - Data Analyst"
-                        class="img-fluid rounded-circle shadow"
-                        style="max-width: 280px"
-                      />
-                      <figcaption class="mt-3 text-muted fw-bold">Victor Chang</figcaption>
-                    </figure>
+        <div class="container py-5">
+          <div class="row align-items-center min-vh-75">
+            <div class="col-lg-6 order-lg-2">
+              <div class="profile-section text-center">
+                <div class="profile-image-container">
+                  <div class="profile-ring"></div>
+                  <img
+                    src="assets/user.jpg"
+                    alt="Victor Chang"
+                    class="profile-image"
+                    id="profileImage"
+                  />
+                  <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for opportunities</span>
                   </div>
-                  <div class="col-md-8">
-                    <div class="ps-md-4">
-                      <h2 class="h3 text-success mb-4">My Story</h2>
-                      <p class="mb-4 fs-5 lh-lg text-muted">
-                        Former Psychological Operations Specialist turned data-driven developer, I blend strategic thinking with creativity. With an MBA in Business Analytics and a growing toolkit in AI and deep learning, I love building smart, engaging websites—including a recipe hub that celebrates family and flavor 🍳
-                      </p>
-                      <p class="mb-4 fs-5 lh-lg text-muted">
-                        Outside the tech world, I'm all about soccer, hiking, and discovering new places. Always curious, always creating.
-                      </p>
-                      <div class="d-flex justify-content-center justify-content-md-start">
-                        <a
-                          href="http://www.changfamfood.com"
-                          target="_blank"
-                          class="btn btn-success btn-lg px-4 py-3 rounded-pill shadow-sm fw-bold"
-                        >🍽️ Explore My Recipe Website</a>
-                      </div>
+                </div>
+                <div class="social-floating">
+                  <a href="https://github.com/VictorAChang" target="_blank" class="social-link" data-bs-toggle="tooltip" title="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="mailto:victor@example.com" class="social-link" data-bs-toggle="tooltip" title="Email">
+                    <i class="bi bi-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="hero-content">
+                <div class="typing-container">
+                  <h1 class="display-3 fw-bold mb-4">
+                    Hi, I'm <span class="text-gradient">Victor</span>
+                  </h1>
+                  <div class="typing-text">
+                    <span class="type-cursor">|</span>
+                  </div>
+                </div>
+                <p class="lead mb-4 fade-in-up" data-delay="1000">
+                  Transforming complex data into actionable insights while crafting digital experiences that matter.
+                </p>
+                <div class="hero-stats row g-3 mb-4 fade-in-up" data-delay="1200">
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <div class="stat-number" data-count="5">0</div>
+                      <div class="stat-label">Years Experience</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <div class="stat-number" data-count="10">0</div>
+                      <div class="stat-label">Projects Completed</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <div class="stat-number" data-count="0">0</div>
+                      <div class="stat-label">Clients - Be the first!</div>
                     </div>
                   </div>
                 </div>
+                <div class="hero-actions fade-in-up" data-delay="1400">
+                  <a href="#story" class="btn btn-primary btn-lg scroll-link">
+                    <i class="bi bi-person-heart me-2"></i>My Story
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Fun Facts Section -->
-      <section id="interests" class="py-5 bg-light">
+      <!-- Interactive Story Section -->
+      <section id="story" class="py-5 bg-light position-relative">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="display-5 fw-bold mb-4">My Journey</h2>
+          <p class="lead text-muted">Click on the timeline to explore my story</p>
+        </div>
+          </div>
+          
+          <div class="story-timeline">
+        <div class="timeline-path"></div>
+        <div class="story-point active" data-story="tech">
+          <div class="point-marker">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <div class="point-year">2016</div>
+          <div class="point-title">Tech Transition</div>
+        </div>
+        <div class="story-point active" data-story="military">
+          <div class="point-marker">
+            <i class="bi bi-shield"></i>
+          </div>
+          <div class="point-year">2019</div>
+          <div class="point-title">Military Transition</div>
+        </div>
+        <div class="story-point" data-story="data">
+          <div class="point-marker">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div class="point-year">2024</div>
+          <div class="point-title">Data Analytics</div>
+        </div>
+        <div class="story-point" data-story="future">
+          <div class="point-marker">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div class="point-year">2025</div>
+          <div class="point-title">Web Development & ML</div>
+        </div>
+          </div>
+
+          <div class="story-content mt-5">
+        <div class="story-card active" id="story-tech">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+          <h3 class="text-info mb-3">Technology Embrace</h3>
+          <p class="mb-4">Discovered my passion for coding and web development. Self-taught Python, JavaScript, and modern frameworks while pursuing my MBA in Business Analytics.</p>
+          <div class="skills-preview">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Web Development</span>
+          </div>
+          <a href="details/tech.html" class="btn btn-outline-info mt-3">More Details</a>
+            </div>
+            <div class="col-md-6 order-md-1">
+          <div class="story-visual">
+            <div class="visual-element tech-visual"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card" id="story-data">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+          <h3 class="text-warning mb-3">Data Analytics Mastery</h3>
+          <p class="mb-4">Advanced into data analysis and machine learning, combining analytical precision with technical innovation to solve complex business problems.</p>
+          <div class="skills-preview">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Business Intelligence</span>
+          </div>
+          <a href="details/data.html" class="btn btn-outline-warning mt-3">More Details</a>
+            </div>
+            <div class="col-md-6">
+          <div class="story-visual">
+            <div class="visual-element data-visual"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card" id="story-future">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+          <h3 class="text-danger mb-3">Future Innovation</h3>
+          <p class="mb-4">Now combining all my experiences to drive innovation in product management and data-driven decision making at Microsoft, while sharing knowledge through my recipe website.</p>
+          <div class="skills-preview">
+            <span class="skill-tag">Product Management</span>
+            <span class="skill-tag">Innovation</span>
+            <span class="skill-tag">Mentorship</span>
+          </div>
+          <a href="details/future.html" class="btn btn-outline-danger mt-3">More Details</a>
+            </div>
+            <div class="col-md-6 order-md-1">
+          <div class="story-visual">
+            <div class="visual-element future-visual"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add a card for Military Transition with More Details button -->
+        <div class="story-card" id="story-military">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+          <h3 class="text-primary mb-3">Military Transition</h3>
+          <p class="mb-4">Transitioned from military service to the tech industry, leveraging discipline and leadership skills to excel in new challenges.</p>
+          <div class="skills-preview">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Discipline</span>
+            <span class="skill-tag">Adaptability</span>
+          </div>
+          <a href="details/military.html" class="btn btn-outline-primary mt-3">More Details</a>
+            </div>
+            <div class="col-md-6">
+          <div class="story-visual">
+            <div class="visual-element military-visual"></div>
+          </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Personality Cards -->
+      <section id="personality" class="py-5 bg-white">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
-              <h2 class="display-5 fw-bold text-success mb-3">Fun Facts About Me</h2>
-              <p class="lead text-muted mb-4">Getting to know the person behind the code</p>
+              <h2 class="display-5 fw-bold mb-4">Beyond the Code</h2>
+              <p class="lead text-muted">Hover over the cards to discover what makes me tick</p>
             </div>
           </div>
-          <div class="row justify-content-center g-4">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0 bg-white">
-                <div class="card-img-top position-relative overflow-hidden" style="height: 220px;">
-                  <img
-                    src="assets/arsenal.gif"
-                    alt="Soccer passion"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-success bg-opacity-75 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-heart-fill text-white fs-1"></i>
-                  </div>
+          
+          <div class="personality-grid">
+            <div class="personality-card" data-tilt>
+              <div class="card-front">
+                <div class="card-icon">
+                  <img src="assets/arsenal.gif" alt="Soccer" class="rounded-circle" width="80" height="80">
                 </div>
-                <div class="card-body text-center p-4">
-                  <h5 class="card-title text-success fw-bold mb-3">Soccer Passion ⚽</h5>
-                  <p class="card-text text-muted">
-                    Football (Soccer) is my favorite sport and my favorite team is Arsenal!
-                  </p>
-                </div>
+                <h4>Soccer Enthusiast</h4>
+                <p>Arsenal Fan</p>
+              </div>
+              <div class="card-back">
+                <h4>The Beautiful Game ⚽</h4>
+                <p>Arsenal supporter through thick and thin. Soccer teaches me teamwork, strategy, and the importance of never giving up - values I bring to every project.</p>
+                <div class="fun-fact">"Football is a simple game; 22 men chase a ball and Arsenal breaks your heart."</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0 bg-white">
-                <div class="card-img-top position-relative overflow-hidden" style="height: 220px;">
-                  <img
-                    src="assets/python.gif"
-                    alt="Python programming"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-info bg-opacity-75 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-code-slash text-white fs-1"></i>
-                  </div>
+
+            <div class="personality-card" data-tilt>
+              <div class="card-front">
+                <div class="card-icon">
+                  <img src="assets/python.gif" alt="Python" class="rounded-circle" width="80" height="80">
                 </div>
-                <div class="card-body text-center p-4">
-                  <h5 class="card-title text-info fw-bold mb-3">Python Love 🐍</h5>
-                  <p class="card-text text-muted">
-                    My preferred programming language for data analytics and web development.
-                  </p>
-                </div>
+                <h4>Code Craftsman</h4>
+                <p>Python Lover</p>
+              </div>
+              <div class="card-back">
+                <h4>Python Passion 🐍</h4>
+                <p>My weapon of choice for data analysis and web development. I love the elegance and simplicity of Python - it's like poetry in code form.</p>
+                <div class="fun-fact">"There should be one obvious way to do it." - Zen of Python</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0 bg-white">
-                <div class="card-img-top position-relative overflow-hidden" style="height: 220px;">
-                  <img
-                    src="assets/engineer.gif"
-                    alt="Engineering background"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning bg-opacity-75 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-gear-fill text-white fs-1"></i>
-                  </div>
+
+            <div class="personality-card" data-tilt>
+              <div class="card-front">
+                <div class="card-icon">
+                  <img src="assets/engineer.gif" alt="Engineering" class="rounded-circle" width="80" height="80">
                 </div>
-                <div class="card-body text-center p-4">
-                  <h5 class="card-title text-warning fw-bold mb-3">Engineering Mind 🛠️</h5>
-                  <p class="card-text text-muted">
-                    My problem-solving skills stem from my engineering education and analytical thinking.
-                  </p>
-                </div>
+                <h4>Problem Solver</h4>
+                <p>Engineer Mind</p>
+              </div>
+              <div class="card-back">
+                <h4>Engineering Mindset 🛠️</h4>
+                <p>My engineering background gives me a systematic approach to problem-solving. I break down complex challenges into manageable components.</p>
+                <div class="fun-fact">"Engineering is the art of making what you want from things you can get."</div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100 shadow-sm border-0 bg-white">
-                <div class="card-img-top position-relative overflow-hidden" style="height: 220px;">
-                  <img
-                    src="assets/office.gif"
-                    alt="The Office fan"
-                    class="w-100 h-100 object-fit-cover"
-                  />
-                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-danger bg-opacity-75 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-emoji-laughing text-white fs-1"></i>
-                  </div>
+
+            <div class="personality-card" data-tilt>
+              <div class="card-front">
+                <div class="card-icon">
+                  <img src="assets/office.gif" alt="The Office" class="rounded-circle" width="80" height="80">
                 </div>
-                <div class="card-body text-center p-4">
-                  <h5 class="card-title text-danger fw-bold mb-3">Office Fanatic 📺</h5>
-                  <p class="card-text text-muted">
-                    Huge fan of The Office! Bears, Beets, Battlestar Galactica... 🐻
-                  </p>
-                </div>
+                <h4>Comedy Lover</h4>
+                <p>Office Fanatic</p>
+              </div>
+              <div class="card-back">
+                <h4>That's What She Said! 📺</h4>
+                <p>Huge fan of The Office! Good humor and positive vibes are essential in any workplace. I believe laughter makes everything better.</p>
+                <div class="fun-fact">"Bears. Beets. Battlestar Galactica." - Jim Halpert</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="connect" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="display-5 fw-bold mb-4">Let's Create Something Amazing</h2>
+              <p class="fs-5 mb-4">Whether it's analyzing data, building applications, or sharing a good recipe, I'm always excited to collaborate on meaningful projects.</p>
+              <div class="connect-actions">
+                <a href="mailto:victor@example.com" class="btn btn-primary btn-lg me-3">
+                  <i class="bi bi-envelope-heart me-2"></i>Get In Touch
+                </a>
+                <a href="#top" class="btn btn-outline-light btn-lg scroll-link">
+                  <i class="bi bi-arrow-up me-2"></i>Back to Top
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    
     <div id="footer-container">
       <!-- Footer will be loaded here -->
     </div>
+    
     <!-- Bootstrap JavaScript Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -179,5 +337,6 @@
     ></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/toggle.js"></script>
+    <script src="scripts/about.js"></script>
   </body>
 </html>
