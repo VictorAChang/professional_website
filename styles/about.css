@@ -366,6 +366,10 @@
   background: linear-gradient(135deg, #fd7e14, #dc3545);
 }
 
+.military-visual {
+  background: linear-gradient(135deg, #6c757d, #343a40);
+}
+
 /* Personality Cards */
 .personality-grid {
   display: grid;
