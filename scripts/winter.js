@@ -95,14 +95,20 @@ class WinterMode {
     localStorage.setItem('winterMode', 'inactive');
   }
 
-  startSnowfall() {
-    // Generate snowflakes at a faster rate for heavier snowfall
-    this.snowflakeInterval = setInterval(() => {
-      if (this.snowflakes.length < this.maxSnowflakes) {
-        this.createSnowflake();
-      }
-    }, 150);
+startSnowfall() {
+  // Burst: create 30 snowflakes instantly
+  for (let i = 0; i < 30; i++) {
+    if (this.snowflakes.length < this.maxSnowflakes) {
+      this.createSnowflake();
+    }
   }
+  // Continue generating snowflakes at intervals
+  this.snowflakeInterval = setInterval(() => {
+    if (this.snowflakes.length < this.maxSnowflakes) {
+      this.createSnowflake();
+    }
+  }, 150);
+}
 
   stopSnowfall() {
     if (this.snowflakeInterval) {
@@ -143,7 +149,7 @@ class WinterMode {
     snowflake.style.animationDuration = duration + 's';
     
     // Random delay to create more natural effect
-    snowflake.style.animationDelay = Math.random() * 2 + 's';
+    snowflake.style.animationDelay = '0s';
     
     // Add to container
     this.snowflakesContainer.appendChild(snowflake);
