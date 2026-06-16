@@ -26,30 +26,37 @@
       <section
         id="hero"
         class="d-flex align-items-center justify-content-center position-relative"
-        style="min-height: 60vh; background: linear-gradient(120deg, #198754 0%, #0dcaf0 100%);"
+        style="min-height: 60vh; padding-top: 80px; padding-bottom: 2rem; background: linear-gradient(120deg, #198754 0%, #0dcaf0 100%);"
       >
         <div class="container text-center">
           <h1
-            class="display-2 fw-bold text-white mb-3"
+            class="display-2 fw-bold text-white mb-2"
             style="text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18)"
           >
             Victor Alfonso Chang
           </h1>
-          <!-- Animated Animal Social Icons -->
-          <div class="d-flex justify-content-center gap-4 mb-4">
+          <p class="fs-6 text-white-50 mb-3 fw-semibold" style="letter-spacing: 3px; text-transform: uppercase;">
+            Software Developer &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; MBA
+          </p>
+          <!-- Social Icons -->
+          <div class="d-flex justify-content-center gap-4 mb-3">
             <a href="https://github.com/VictorAChang" target="_blank" class="social-icon" title="GitHub">
               <i class="bi bi-github"></i>
             </a>
             <a href="https://linkedin.com/in/victorachang" target="_blank" class="social-icon" title="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="mailto:vchang7272@gmail.com" class="social-icon" title="Email">
+            <a href="contact.html" class="social-icon" title="Email">
               <i class="bi bi-envelope"></i>
             </a>
           </div>
           <!-- Typewriter Tagline -->
-          <p class="lead fs-2 text-white mb-4 typewriter" id="typewriterTagline" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12)"></p>
-          <div class="scroll-indicator mt-5">
+          <p class="lead fs-2 text-white mb-3 typewriter" id="typewriterTagline" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12)"></p>
+          <!-- Resume CTA -->
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light btn-lg mb-4">
+            <i class="bi bi-file-earmark-person me-2"></i>View Resume
+          </a>
+          <div class="scroll-indicator mt-3">
             <span class="arrow-down"></span>
           </div>
         </div>
@@ -114,7 +121,7 @@
         </style>
         <script>
           // Typewriter effect for tagline
-          const taglines = ["Code.", "Data.", "Adventure.", "Creativity."];
+          const taglines = ["Software Developer.", "Data Analyst.", "Python & JavaScript.", "Problem Solver."];
           let twIndex = 0, charIndex = 0, twElement = document.getElementById("typewriterTagline");
           function typeTagline() {
             if (!twElement) return;
@@ -154,72 +161,71 @@
       <!-- Front Face - Web Development -->
       <div class="cube-face front" data-page="webdev">
         <div class="face-content">
-      <div class="face-icon">💻</div>
-      <h3>Web Development</h3>
-      <p>Innovative web solutions and creative projects</p>
-      <div class="face-overlay">
-        <a href="webdev.html" class="btn btn-dark btn-lg">Explore</a>
-      </div>
+          <div class="face-icon"><i class="bi bi-code-slash"></i></div>
+          <h3>Web Development</h3>
+          <p>Full-stack apps and creative web projects</p>
+          <div class="face-overlay">
+            <a href="webdev.html" class="btn btn-light btn-lg cube-nav-link">Explore</a>
+          </div>
         </div>
       </div>
-      
+
       <!-- Back Face - Data Science -->
       <div class="cube-face back" data-page="data">
         <div class="face-content">
-      <div class="face-icon">📊</div>
-      <h3>Data Science</h3>
-      <p>Insights through data analysis and visualization</p>
-      <div class="face-overlay">
-        <a href="data.html" class="btn btn-dark btn-lg">Explore</a>
-      </div>
+          <div class="face-icon"><i class="bi bi-bar-chart-line"></i></div>
+          <h3>Data Science</h3>
+          <p>Insights through analysis and machine learning</p>
+          <div class="face-overlay">
+            <a href="data.html" class="btn btn-light btn-lg cube-nav-link">Explore</a>
+          </div>
         </div>
       </div>
-      
+
       <!-- Right Face - Education -->
       <div class="cube-face right" data-page="education">
         <div class="face-content">
-      <div class="face-icon">🎓</div>
-      <h3>Education</h3>
-      <p>View my academic background and qualifications</p>
-      <div class="face-overlay">
-        <a href="education.html" class="btn btn-light btn-lg">Explore</a>
-      </div>
+          <div class="face-icon"><i class="bi bi-mortarboard-fill"></i></div>
+          <h3>Education</h3>
+          <p>Academic background and career journey</p>
+          <div class="face-overlay">
+            <a href="education.html" class="btn btn-dark btn-lg cube-nav-link">Explore</a>
+          </div>
         </div>
       </div>
-      
-      <!-- Left Face - Adventures -->
-      <div class="cube-face left" data-page="travels">
+
+      <!-- Left Face - GitHub -->
+      <div class="cube-face left" data-page="github">
         <div class="face-content">
-      <div class="face-icon">🌍</div>
-      <h3>Adventures</h3>
-      <p>Join me on incredible journeys around the world</p>
-      <div class="face-overlay">
-        <a href="traveling.html" class="btn btn-light btn-lg">Explore</a>
-      </div>
+          <div class="face-icon"><i class="bi bi-github"></i></div>
+          <h3>GitHub</h3>
+          <p>Open source projects and code repositories</p>
+          <div class="face-overlay">
+            <a href="https://github.com/VictorAChang" target="_blank" class="btn btn-light btn-lg cube-nav-link">View</a>
+          </div>
         </div>
       </div>
 
       <!-- Top Face - About Me -->
       <div class="cube-face top" data-page="about">
         <div class="face-content">
-      <div class="face-icon">👨</div>
-      <h3>About Me</h3>
-      <p>Discover my journey, skills, and passion for technology</p>
-      <div class="face-overlay">
-        <a href="about.html" class="btn btn-light btn-lg">Explore</a>
-      </div>
+          <div class="face-icon"><i class="bi bi-person-fill"></i></div>
+          <h3>About Me</h3>
+          <p>My story, skills, and passion for technology</p>
+          <div class="face-overlay">
+            <a href="about.html" class="btn btn-light btn-lg cube-nav-link">Explore</a>
+          </div>
         </div>
       </div>
 
       <!-- Bottom Face - Contact Me -->
       <div class="cube-face bottom" data-page="contact">
         <div class="face-content">
-      <div class="face-icon">📧</div>
-      <h3>Contact Me</h3>
-      <p>Let's connect and discuss opportunities</p>
-      <div class="face-overlay">
-        <a href="mailto:vchang7272@gmail.com?subject=Web Development Services Inquiry&body=Hi Victor,%0D%0A%0D%0AI'm interested in your web development services. I'd like to discuss:%0D%0A%0D%0A☐ Personal website development%0D%0A☐ Small web application concept%0D%0A☐ Other web development project%0D%0A%0D%0AProject Details:%0D%0A- Brief description of what I'm looking for:%0D%0A%0D%0A- Timeline and budget considerations:%0D%0A%0D%0A- Any specific features or requirements:%0D%0A%0D%0A%0D%0APlease let me know your availability for a consultation.%0D%0A%0D%0ABest regards," class="btn btn-dark btn-lg">Contact</a>
-        </div>
+          <div class="face-icon"><i class="bi bi-envelope-fill"></i></div>
+          <h3>Contact Me</h3>
+          <p>Let's connect and discuss opportunities</p>
+          <div class="face-overlay">
+            <a href="contact.html" class="btn btn-light btn-lg cube-nav-link">Contact</a>
           </div>
         </div>
       </div>
@@ -228,6 +234,26 @@
       </div>
         </div>
       </div>
+      <!-- Tech Skills Strip -->
+      <section class="py-4 bg-white border-top">
+        <div class="container text-center">
+          <p class="text-muted fw-semibold mb-3" style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem;">Technologies I Work With</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge rounded-pill bg-primary px-3 py-2 fs-6">Python</span>
+            <span class="badge rounded-pill bg-warning text-dark px-3 py-2 fs-6">JavaScript</span>
+            <span class="badge rounded-pill bg-info text-dark px-3 py-2 fs-6">SQL</span>
+            <span class="badge rounded-pill bg-danger px-3 py-2 fs-6">HTML / CSS</span>
+            <span class="badge rounded-pill bg-success px-3 py-2 fs-6">Django</span>
+            <span class="badge rounded-pill bg-secondary px-3 py-2 fs-6">FastAPI</span>
+            <span class="badge rounded-pill bg-dark px-3 py-2 fs-6">Docker</span>
+            <span class="badge rounded-pill bg-primary px-3 py-2 fs-6">Pandas</span>
+            <span class="badge rounded-pill bg-info text-dark px-3 py-2 fs-6">Scikit-learn</span>
+            <span class="badge rounded-pill bg-success px-3 py-2 fs-6">Bootstrap</span>
+            <span class="badge rounded-pill bg-warning text-dark px-3 py-2 fs-6">PostgreSQL</span>
+            <span class="badge rounded-pill bg-secondary px-3 py-2 fs-6">Power BI</span>
+          </div>
+        </div>
+      </section>
     </main>
     <div id="footer-container">
       <!-- Footer will be loaded here -->

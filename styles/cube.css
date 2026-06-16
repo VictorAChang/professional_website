@@ -67,30 +67,30 @@
   opacity: 1;
 }
 
-/* Color-blind friendly tech-savvy color scheme */
-.cube-face.front { 
-  transform: rotateY(0deg) translateZ(150px); 
-  background: linear-gradient(135deg, #0066cc 0%, #004499 100%); /* Bright Blue */
+/* Face colours — deep, desaturated tones anchored to the site's #198754 / #0dcaf0 palette */
+.cube-face.front {
+  transform: rotateY(0deg) translateZ(150px);
+  background: linear-gradient(135deg, #1e5fa8 0%, #123a70 100%); /* Deep Royal Blue */
 }
-.cube-face.back { 
-  transform: rotateY(180deg) translateZ(150px); 
-  background: linear-gradient(135deg, #ff6600 0%, #cc5200 100%); /* Vibrant Orange */
+.cube-face.back {
+  transform: rotateY(180deg) translateZ(150px);
+  background: linear-gradient(135deg, #0d8a78 0%, #085e52 100%); /* Deep Teal — echoes site cyan */
 }
-.cube-face.right { 
-  transform: rotateY(90deg) translateZ(150px); 
-  background: linear-gradient(135deg, #00cc66 0%, #009944 100%); /* Electric Green */
+.cube-face.right {
+  transform: rotateY(90deg) translateZ(150px);
+  background: linear-gradient(135deg, #1a7d4a 0%, #0f5230 100%); /* Forest Green — echoes site green */
 }
-.cube-face.left { 
-  transform: rotateY(-90deg) translateZ(150px); 
-  background: linear-gradient(135deg, #9933cc 0%, #7a2a99 100%); /* Tech Purple */
+.cube-face.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  background: linear-gradient(135deg, #1c2b5e 0%, #0e1838 100%); /* Dark Navy */
 }
-.cube-face.top { 
-  transform: rotateX(90deg) translateZ(150px); 
-  background: linear-gradient(135deg, #cc3366 0%, #992244 100%); /* Magenta */
+.cube-face.top {
+  transform: rotateX(90deg) translateZ(150px);
+  background: linear-gradient(135deg, #5a3d8c 0%, #3a2460 100%); /* Rich Plum */
 }
-.cube-face.bottom { 
-  transform: rotateX(-90deg) translateZ(150px); 
-  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%); /* Dark Gray */
+.cube-face.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+  background: linear-gradient(135deg, #7a4520 0%, #4f2c10 100%); /* Deep Amber */
 }
 
 .face-content {
@@ -214,22 +214,22 @@ body.bg-dark .cube-heading {
   color: #f8f9fa;
 }
 
-/* Dark Mode Cube Faces - Darker variants of the original colors */
-body.bg-dark .cube-face.front { 
-  background: linear-gradient(135deg, #003d7a 0%, #002952 100%); /* Darker Blue */
+/* Dark mode — slightly deeper shades of the same palette */
+body.bg-dark .cube-face.front {
+  background: linear-gradient(135deg, #153f78 0%, #0a2450 100%);
 }
-body.bg-dark .cube-face.back { 
-  background: linear-gradient(135deg, #b8400f 0%, #8f3000 100%); /* Darker Orange */
+body.bg-dark .cube-face.back {
+  background: linear-gradient(135deg, #096658 0%, #054540 100%);
 }
-body.bg-dark .cube-face.right { 
-  background: linear-gradient(135deg, #007a3d 0%, #005c2e 100%); /* Darker Green */
+body.bg-dark .cube-face.right {
+  background: linear-gradient(135deg, #125e36 0%, #0a3e22 100%);
 }
-body.bg-dark .cube-face.left { 
-  background: linear-gradient(135deg, #6b2699 0%, #4d1c70 100%); /* Darker Purple */
+body.bg-dark .cube-face.left {
+  background: linear-gradient(135deg, #111e45 0%, #080f28 100%);
 }
-body.bg-dark .cube-face.top { 
-  background: linear-gradient(135deg, #99264d 0%, #701c36 100%); /* Darker Magenta */
+body.bg-dark .cube-face.top {
+  background: linear-gradient(135deg, #3d2868 0%, #271645 100%);
 }
-body.bg-dark .cube-face.bottom { 
-  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); /* Even Darker Gray */
+body.bg-dark .cube-face.bottom {
+  background: linear-gradient(135deg, #5c3218 0%, #3a1e0a 100%);
 }

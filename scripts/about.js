@@ -276,69 +276,6 @@ class AboutPageInteractions {
     });
   }
 
-  // Easter Egg: Konami Code
-  setupKonamiCode() {
-    const konamiCode = [
-      'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
-      'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
-      'KeyB', 'KeyA'
-    ];
-    let konamiIndex = 0;
-
-    document.addEventListener('keydown', (e) => {
-      if (e.code === konamiCode[konamiIndex]) {
-        konamiIndex++;
-        if (konamiIndex === konamiCode.length) {
-          this.activateEasterEgg();
-          konamiIndex = 0;
-        }
-      } else {
-        konamiIndex = 0;
-      }
-    });
-  }
-
-  activateEasterEgg() {
-    // Add rainbow colors to the page
-    const style = document.createElement('style');
-    style.textContent = `
-      .text-gradient {
-        background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
-        animation: rainbow 2s linear infinite !important;
-      }
-      
-      @keyframes rainbow {
-        0% { filter: hue-rotate(0deg); }
-        100% { filter: hue-rotate(360deg); }
-      }
-    `;
-    document.head.appendChild(style);
-
-    // Show fun message
-    const message = document.createElement('div');
-    message.innerHTML = '🎉 You found the secret! 🎉';
-    message.style.cssText = `
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      z-index: 9999;
-      font-size: 1.5rem;
-      text-align: center;
-    `;
-    document.body.appendChild(message);
-
-    setTimeout(() => {
-      message.remove();
-    }, 3000);
-  }
 }
 
 // Initialize when DOM is loaded

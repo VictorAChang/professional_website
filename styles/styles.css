@@ -48,7 +48,7 @@ body.bg-dark .support-h2 {
 		padding-left: 0.5rem !important;
 	}
 }
-#darkModeToggle, #winterModeToggle {
+#darkModeToggle {
 	transition: background 0.3s, color 0.3s, border 0.3s;
 	border-radius: 2rem;
 	font-weight: 500;
@@ -61,20 +61,12 @@ body.bg-dark .support-h2 {
 	color: #fff;
 	border-color: #212529;
 }
-#winterModeToggle.active {
-	background: linear-gradient(90deg, #e3f2fd 60%, #bbdefb 100%);
-	color: #1976d2;
-	border-color: #2196f3;
-}
-#darkModeIcon, .winter-icon {
+#darkModeIcon {
 	font-size: 1.2rem;
 	transition: color 0.3s;
 }
 #darkModeToggle.active #darkModeIcon {
 	color: #ffd700;
-}
-#winterModeToggle.active .winter-icon {
-	color: #1976d2;
 }
 /* Headings in dark mode */
 body.bg-dark h1,
@@ -123,127 +115,38 @@ footer.bg-light, footer.bg-light.text-dark {
   color: #212529 !important;
 }
 
-/* Winter Mode Styles */
-.winter-icon {
-  font-size: 16px;
-  animation: snowflakeRotate 4s linear infinite;
-}
-
-#winterModeToggle.active .winter-icon {
-  animation: snowflakeRotate 2s linear infinite;
-}
-
-#winterModeToggle.active {
-  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%) !important;
-  color: white !important;
-  border-color: #0d47a1 !important;
-}
-
-#winterModeToggle.active:hover {
-  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%) !important;
-}
-
-@keyframes snowflakeRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Snowflake Container */
-.snowflakes-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 999;
-  overflow: hidden;
-}
-
-/* Individual Snowflake */
-.snowflake {
-  position: absolute;
-  top: -10px;
-  color: #fff;
-  font-size: 1em;
-  animation-name: snowflakeFall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
-/* Snowflake Falling Animation */
-@keyframes snowflakeFall {
-  0% {
-    transform: translateY(-100vh) rotate(0deg);
-    opacity: 1;
+/* Push hero below fixed navbar on smaller screens */
+@media (max-width: 991.98px) {
+  #hero {
+    padding-top: 100px !important;
   }
-  100% {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-/* Different snowflake sizes */
-.snowflake.small {
-  font-size: 0.8em;
-  animation-duration: 8s;
-}
-
-.snowflake.medium {
-  font-size: 1.2em;
-  animation-duration: 10s;
-}
-
-.snowflake.large {
-  font-size: 1.6em;
-  animation-duration: 12s;
 }
 
 /* Responsive adjustments for navbar buttons */
 @media (max-width: 768px) {
-  .winter-text {
-    display: none;
-  }
-  
-  /* Dark mode button mobile styles */
   #darkModeText {
     display: none;
   }
-  
-  /* Enhanced visual feedback for mobile buttons */
-  #darkModeToggle, #winterModeToggle {
+
+  #darkModeToggle {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border: 2px solid #6c757d;
     transition: all 0.3s ease;
   }
-  
+
   #darkModeToggle.active {
     background: linear-gradient(135deg, #343a40 0%, #212529 100%);
     border-color: #000;
     transform: scale(1.05);
   }
-  
-  #winterModeToggle.active {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-    border-color: #2196f3;
-    transform: scale(1.05);
-  }
-  
-  /* Enhanced icon styling for mobile */
-  #darkModeIcon, .winter-icon {
+
+  #darkModeIcon {
     font-size: 1.4rem;
     transition: all 0.3s ease;
-    filter: grayscale(0);
   }
-  
+
   #darkModeToggle.active #darkModeIcon {
     filter: brightness(1.3) drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
-    transform: scale(1.1);
-  }
-  
-  #winterModeToggle.active .winter-icon {
-    filter: brightness(1.2) drop-shadow(0 0 8px rgba(33, 150, 243, 0.8));
     transform: scale(1.1);
   }
 }
